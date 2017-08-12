@@ -1,6 +1,6 @@
 from flask import Flask
 from datetime import datetime
-
+import pygal
 
 
 api_key = "AIzaSyDraPMr8KRfkux5u9DgCjfWh1SA_xJmIl8"
@@ -13,7 +13,9 @@ def hello_world():
 
 @app.route('/top10views', methods=["GET"])
 def top10views():
-    pass
+
+    top10videos = 100
+    return "lol"
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=5001)
