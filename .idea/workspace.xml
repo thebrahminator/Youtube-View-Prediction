@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="013f5e07-94e2-476f-a6e1-41bc93ebeab6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/channel_names.csv" afterPath="$PROJECT_DIR$/channel_names.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/videoandchannelid.csv" afterPath="$PROJECT_DIR$/videoandchannelid.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/youtubeapi.py" afterPath="$PROJECT_DIR$/youtubeapi.py" />
-    </list>
+    <list default="true" id="013f5e07-94e2-476f-a6e1-41bc93ebeab6" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,8 +51,8 @@
       <file leaf-file-name="videoandchannelid.csv" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/videoandchannelid.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-14030">
-              <caret line="9288" column="11" lean-forward="false" selection-start-line="9288" selection-start-column="0" selection-end-line="9288" selection-end-column="11" />
+            <state relative-caret-position="280">
+              <caret line="10242" column="36" lean-forward="true" selection-start-line="10242" selection-start-column="36" selection-end-line="10242" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -235,7 +231,7 @@
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -306,8 +302,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/videoandchannelid.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-14030">
-          <caret line="9288" column="11" lean-forward="false" selection-start-line="9288" selection-start-column="0" selection-end-line="9288" selection-end-column="11" />
+        <state relative-caret-position="280">
+          <caret line="10242" column="36" lean-forward="true" selection-start-line="10242" selection-start-column="36" selection-end-line="10242" selection-end-column="36" />
           <folding />
         </state>
       </provider>
