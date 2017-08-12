@@ -6,7 +6,7 @@ from time import sleep
 
 url = "https://www.googleapis.com/youtube/v3/videos?id=7lCDEYXw3mM&key=AIzaSyAjkrSgzR6voSP3ut1Mj1ukkAZ_xYtEC_0&part=snippet,contentDetails,statistics,status"
 
-video_data_reader = open('remaining.csv', 'r')
+video_data_reader = open('videoandchannelid.csv', 'r')
 video_data_reader.__next__()
 video_channel_data = csv.reader(video_data_reader)
 video_data_writer = open('videoStats.csv', 'a')
