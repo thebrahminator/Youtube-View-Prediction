@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="013f5e07-94e2-476f-a6e1-41bc93ebeab6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Youtube Views.py" afterPath="$PROJECT_DIR$/Youtube Views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scrapping_video_details.py" afterPath="$PROJECT_DIR$/scrapping_video_details.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/videoStats.csv" afterPath="$PROJECT_DIR$/videoStats.csv" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,7 +12,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Youtube_Views$scrapping_video_details.coverage" NAME="scrapping_video_details Coverage Results" MODIFIED="1502572754140" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Youtube_Views$scrapping_video_details.coverage" NAME="scrapping_video_details Coverage Results" MODIFIED="1502572794949" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Youtube_Views$Youtube_Views.coverage" NAME="Youtube Views Coverage Results" MODIFIED="1502572815642" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Youtube_Views$youtubeapi.coverage" NAME="youtubeapi Coverage Results" MODIFIED="1502566192049" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileColors">
@@ -52,7 +52,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scrapping_video_details.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="scrapping_video_details.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scrapping_video_details.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
@@ -64,11 +64,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="videoStats.csv" pinned="false" current-in-tab="false">
+      <file leaf-file-name="videoStats.csv" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/videoStats.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3395">
-              <caret line="9996" column="0" lean-forward="false" selection-start-line="9996" selection-start-column="0" selection-end-line="9996" selection-end-column="0" />
+            <state relative-caret-position="355">
+              <caret line="10253" column="0" lean-forward="true" selection-start-line="10253" selection-start-column="0" selection-end-line="10253" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -192,7 +192,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.scrapping_video_details">
+  <component name="RunManager" selected="Python.Youtube Views">
     <configuration name="Youtube Views" type="PythonConfigurationType" factoryName="Python" singleton="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -277,7 +277,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -348,14 +347,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/videoStats.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3395">
-          <caret line="9996" column="0" lean-forward="false" selection-start-line="9996" selection-start-column="0" selection-end-line="9996" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/remaining.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="355">
@@ -364,11 +355,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/videoandchannelid.csv">
+    <entry file="file://$PROJECT_DIR$/scrapping_video_details.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-130345">
-          <caret line="1" column="11" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="11" />
-          <folding />
+        <state relative-caret-position="120">
+          <caret line="8" column="43" lean-forward="false" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -382,13 +375,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrapping_video_details.py">
+    <entry file="file://$PROJECT_DIR$/videoandchannelid.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="43" lean-forward="false" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-130345">
+          <caret line="1" column="11" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videoStats.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="10253" column="0" lean-forward="true" selection-start-line="10253" selection-start-column="0" selection-end-line="10253" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
