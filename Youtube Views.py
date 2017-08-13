@@ -63,6 +63,7 @@ def top20likes():
 @app.route('/red', methods=["GET"])
 def redir():
     return redirect("www.youtube.com")
-if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=5001, debug=True)
+
+#if __name__ == '__main__':
+#    app.run(host="0.0.0.0", port=5001, debug=True)
 
