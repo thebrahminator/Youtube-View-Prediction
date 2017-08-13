@@ -9,7 +9,7 @@ import json
 #data = r.json()
 
 donechannels = []
-filebridge = open('videoandchannelid.csv', 'r')
+filebridge = open('../datasets/videoandchannelid.csv', 'r')
 dataset = csv.DictReader(filebridge)
 headers = ("channelId", "publishedAt", "viewCount", "commentCount",
            "subscriberCount", "videoCount")
