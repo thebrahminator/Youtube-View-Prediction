@@ -9,7 +9,7 @@ url = "https://www.googleapis.com/youtube/v3/videos?id=7lCDEYXw3mM&key=AIzaSyAjk
 video_data_reader = open('../datasets/videoandchannelid.csv', 'r')
 video_data_reader.__next__()
 video_channel_data = csv.reader(video_data_reader)
-video_data_writer = open('videoStats.csv', 'a')
+video_data_writer = open('../datasets/videoStats.csv', 'a')
 video_data_headings = ("videoId", "publishTime", "categoryId", "viewCount", "likeCount",
                        "dislikeCount", "favouriteCount", "commentCount")
 video_data_bridge = csv.DictWriter(video_data_writer,video_data_headings)

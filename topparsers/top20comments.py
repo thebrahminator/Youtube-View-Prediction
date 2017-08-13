@@ -20,7 +20,7 @@ sortedAllVideoList = sorted(allVideoRequiredList, key=lambda k:k['commentCount']
 
 top20videos = sortedAllVideoList[:21]
 
-top20csvfile = open("top20comments.csv", "w")
+top20csvfile = open("../datasets/top20comments.csv", "w")
 top20filebridge = csv.DictWriter(top20csvfile, top20headings)
 top20filebridge.writeheader()
 for row in top20videos:

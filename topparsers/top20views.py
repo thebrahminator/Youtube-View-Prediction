@@ -20,7 +20,7 @@ sortedAllVideoList = sorted(allVideoRequiredList, key=lambda k:k['viewCount'], r
 
 top20videos = sortedAllVideoList[:20]
 
-top20csvfile = open("top20views.csv", "w")
+top20csvfile = open("../datasets/top20views.csv", "w")
 top20filebridge = csv.DictWriter(top20csvfile, top20headings)
 top20filebridge.writeheader()
 for row in top20videos:
