@@ -81,6 +81,73 @@ def top20Comments():
     bar_graph = bar_chart.render_data_uri()
     return render_template('graphs/top20likes.html', bar_graph=bar_graph, urls=urls, ids=top20videoid)
 
+#https://www.youtube.com/channel/UCpPOf9BQPwa4K11Zjxu1ZPw
+
+@app.route('/top20channels', methods=["GET"])
+def top20channels():
+    top20channelfile = open(os.path.join(app.config["UPLOAD_FOLDER"], "top20channels.csv"), 'r')
+    top20subdata = csv.DictReader(top20channelfile)
+    top20channelid = []
+    top20channelsubscnt = []
+    for data in top20subdata:
+        top20channelid.append(data["channelId"])
+        top20channelsubscnt.append(int(data["subscriberCount"]))
+
+    urls = []
+    for data in top20channelid:
+        url = "https://www.youtube.com/channel/"+data
+        urls.append(url)
+    print(urls)
+    bar_chart = pygal.Bar()
+    bar_chart.title = "Top 20 Channels by Subscribers"
+    bar_chart.x_labels = top20channelid
+    bar_chart.add('Subscriber Count', top20channelsubscnt)
+    bar_graph = bar_chart.render_data_uri()
+    return render_template('graphs/top20subscriber.html', bar_graph=bar_graph, urls=urls, ids=top20channelid)
+
+@app.route('/top20videocount', methods=["GET"])
+def top20videocount():
+    top20channelfile = open(os.path.join(app.config["UPLOAD_FOLDER"], "top20allvideos.csv"), 'r')
+    top20subdata = csv.DictReader(top20channelfile)
+    top20channelid = []
+    top20channelsubscnt = []
+    for data in top20subdata:
+        top20channelid.append(data["channelId"])
+        top20channelsubscnt.append(int(data["videoCount"]))
+
+    urls = []
+    for data in top20channelid:
+        url = "https://www.youtube.com/channel/"+data
+        urls.append(url)
+    print(urls)
+    bar_chart = pygal.Bar()
+    bar_chart.title = "Top 20 Channels by Video Count"
+    bar_chart.x_labels = top20channelid
+    bar_chart.add('Video Count', top20channelsubscnt)
+    bar_graph = bar_chart.render_data_uri()
+    return render_template('graphs/top20allvideos.html', bar_graph=bar_graph, urls=urls, ids=top20channelid)
+
+@app.route('/top20allviews', methods=["GET"])
+def top20allviews():
+    top20channelfile = open(os.path.join(app.config["UPLOAD_FOLDER"], "top20allviews.csv"), 'r')
+    top20subdata = csv.DictReader(top20channelfile)
+    top20channelid = []
+    top20channelsubscnt = []
+    for data in top20subdata:
+        top20channelid.append(data["channelId"])
+        top20channelsubscnt.append(int(data["viewCount"]))
+
+    urls = []
+    for data in top20channelid:
+        url = "https://www.youtube.com/channel/"+data
+        urls.append(url)
+    print(urls)
+    bar_chart = pygal.Bar()
+    bar_chart.title = "Top 20 Channels by Total View Count"
+    bar_chart.x_labels = top20channelid
+    bar_chart.add('Total View Count', top20channelsubscnt)
+    bar_graph = bar_chart.render_data_uri()
+    return render_template('graphs/top20allviews.html', bar_graph=bar_graph, urls=urls, ids=top20channelid)
 
 @app.route('/red', methods=["GET"])
 def redir():

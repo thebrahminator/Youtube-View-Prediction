@@ -66,4 +66,4 @@ for row in video_channel_data:
     #ids["commentCount"] = videoData["statistics"]["commentCount"]
     print(ids)
     video_data_bridge.writerow(ids)
-    break
+
