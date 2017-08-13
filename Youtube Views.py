@@ -59,11 +59,33 @@ def top20likes():
     bar_graph = bar_chart.render_data_uri()
     return render_template('graphs/top20likes.html', bar_graph=bar_graph, urls=urls, ids=top20videoid)
 
+@app.route('/top20comments', methods=["GET"])
+def top20Comments():
+    top20videofile = open(os.path.join(app.config["UPLOAD_FOLDER"], "top20comments.csv"), 'r')
+    top20likedata = csv.DictReader(top20videofile)
+    top20videoid = []
+    top20videocomment = []
+    for data in top20likedata:
+        top20videoid.append(data["videoId"])
+        top20videocomment.append(int(data["commentCount"]))
+
+    urls = []
+    for data in top20videoid:
+        url = "http://www.youtube.com/watch?v="+data
+        urls.append(url)
+    print(urls)
+    bar_chart = pygal.Bar()
+    bar_chart.title = "Top 20 videos by Comments"
+    bar_chart.x_labels = top20videoid
+    bar_chart.add('commentCount', top20videocomment)
+    bar_graph = bar_chart.render_data_uri()
+    return render_template('graphs/top20likes.html', bar_graph=bar_graph, urls=urls, ids=top20videoid)
+
 
 @app.route('/red', methods=["GET"])
 def redir():
     return redirect("www.youtube.com")
 
-#if __name__ == '__main__':
-#    app.run(host="0.0.0.0", port=5001, debug=True)
+if __name__ == '__main__':
+    app.run(host="0.0.0.0", port=5001, debug=True)
 
