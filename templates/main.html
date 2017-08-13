@@ -114,11 +114,12 @@
         <!-- sidebar menu: : style can be found in sidebar.less -->
         <ul class="sidebar-menu">
             <li class="header">MAIN NAVIGATION</li>
-                <li>
-                    <a href="{{ url_for('top20views') }}">Top 20 Views</a>
-                    <a href="{{ url_for('top20likes') }}">Top 20 Likes</a>
-                    <a href="{{ url_for('top20Comments') }}">Top 20 Comments</a>
-                </li>
+            <li><a href="{{ url_for('top20views') }}">Top 20 Views</a></li>
+            <li><a href="{{ url_for('top20likes') }}">Top 20 Likes</a></li>
+            <li><a href="{{ url_for('top20Comments') }}">Top 20 Comments</a></li>
+            <li><a href="{{ url_for('top20channels') }}">Top 20 Channels by Subscriber</a></li>
+            <li><a href="{{ url_for('top20allviews') }}">Top 20 Channels by Total Views</a></li>
+            <li><a href="{{ url_for('top20videocount') }}">Top 20 Channels by Video Count</a></li>
         </ul>
     </section>
     <!-- /.sidebar -->
