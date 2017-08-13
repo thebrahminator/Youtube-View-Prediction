@@ -1,7 +1,7 @@
 import csv
 import json
 
-videostatbridge = open('videoStats.csv', 'r')
+videostatbridge = open('../datasets/videoStats.csv', 'r')
 top20headings = ("videoId", "commentCount")
 
 videoStats = csv.DictReader(videostatbridge)

@@ -15,7 +15,7 @@ test_api_key = "AIzaSyD1fGnUYGPjdfpklW9PmjbQkOqlUKxQ3o8"
 
 #item_list = raw_data["items"]
 idsfile = open('videoandchannelid.csv', "a")
-queriesfile = open('channel_names.csv', 'r')
+queriesfile = open('../datasets/channel_names.csv', 'r')
 queriesfile_csv = csv.reader(queriesfile)
 heading = ("videoId", "channelId")
 video_channel_id = []
