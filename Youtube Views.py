@@ -59,13 +59,10 @@ def top20likes():
     bar_graph = bar_chart.render_data_uri()
     return render_template('graphs/top20likes.html', bar_graph=bar_graph, urls=urls, ids=top20videoid)
 
-<<<<<<< HEAD
-#if __name__ == '__main__':
-#    app.run(host="0.0.0.0", port=5001)
-=======
+
 @app.route('/red', methods=["GET"])
 def redir():
     return redirect("www.youtube.com")
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=5001, debug=True)
->>>>>>> 8a8eadda1c650c9d1721bf710136f6b2c8a64718
+
