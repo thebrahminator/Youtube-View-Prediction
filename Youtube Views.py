@@ -21,9 +21,6 @@ def top20views():
     for data in top20viewdata:
         top20videoid.append(data["videoId"])
         top20videoview.append(int(data["viewCount"]))
-        #print(data)
-    #print(top20videoid)
-    #print(top20videoview)
     urls = []
     for data in top20videoid:
         url = "http://www.youtube.com/watch?v="+data
@@ -149,10 +146,31 @@ def top20allviews():
     bar_graph = bar_chart.render_data_uri()
     return render_template('graphs/top20allviews.html', bar_graph=bar_graph, urls=urls, ids=top20channelid)
 
-@app.route('/red', methods=["GET"])
-def redir():
-    return redirect("www.youtube.com")
+@app.route('/scatter1', methods=["GET"])
+def scatter1():
+    channelDataFile = open(os.path.join(app.config["UPLOAD_FOLDER"], "channelStats.csv"), 'r')
+    channelData = csv.DictReader(channelDataFile)
+    listData = []
+    listData1 = []
+    for data in channelData:
+        if data["viewCount"]!= "-1" and data["subscriberCount"] != "-1" and int(data["viewCount"]) > 10000\
+                and int(data["subscriberCount"]) > 1000:
+            intermid = [int(data["subscriberCount"])/1000, int(data["viewCount"])/10000]
+            intermid=tuple(intermid)
+            listData.append(intermid)
+        if data["viewCount"] != "-1" and data["videoCount"] != "-1" and int(data["viewCount"]) > 10000 \
+                and int(data["videoCount"]) > 10:
+            intermid = [int(data["videoCount"])/10, int(data["viewCount"])/10000]
+            intermid=tuple(intermid)
+            listData1.append(intermid)
+    scatter_plot = pygal.XY(stroke=False)
+    scatter_plot.title = "Subscriber Count vs View Count"
+    scatter_plot.add("sub/1000 & viewcnt/10000",listData)
+    scatter_plot.add("totvid/10 & viewcnt/10000", listData1)
+    scatter_plot_rendered = scatter_plot.render_data_uri()
+    return render_template('graphs/scatter1.html', scatter_plot=scatter_plot_rendered)
 
-if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=5001, debug=True)
+
+#if __name__ == '__main__':
+#    app.run(host="0.0.0.0", port=5001, debug=True)
 
