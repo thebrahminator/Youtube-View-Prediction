@@ -76,7 +76,7 @@ def top20Comments():
     bar_chart.x_labels = top20videoid
     bar_chart.add('commentCount', top20videocomment)
     bar_graph = bar_chart.render_data_uri()
-    return render_template('graphs/top20likes.html', bar_graph=bar_graph, urls=urls, ids=top20videoid)
+    return render_template('graphs/top20comments.html', bar_graph=bar_graph, urls=urls, ids=top20videoid)
 
 #https://www.youtube.com/channel/UCpPOf9BQPwa4K11Zjxu1ZPw
 
@@ -184,7 +184,7 @@ def top20likesbyviews():
         urls.append(url)
     print(urls)
     bar_chart = pygal.Bar()
-    bar_chart.title = "Top 20 Channels by Total Likes per View"
+    bar_chart.title = "Top 20 Videos by Total Likes per View"
     bar_chart.x_labels = top20channelid
     bar_chart.add('Total Likes/View Count', top20channelsubscnt)
     bar_graph = bar_chart.render_data_uri()
@@ -206,7 +206,7 @@ def top20dislikesbyviews():
         urls.append(url)
     print(urls)
     bar_chart = pygal.Bar()
-    bar_chart.title = "Top 20 Channels by Total Dislikes per View"
+    bar_chart.title = "Top 20 Videos by Total Dislikes per View"
     bar_chart.x_labels = top20channelid
     bar_chart.add('Total Dislikes/View Count', top20channelsubscnt)
     bar_graph = bar_chart.render_data_uri()
@@ -228,7 +228,7 @@ def top20viewsbysubscribers():
         urls.append(url)
     print(urls)
     bar_chart = pygal.Bar()
-    bar_chart.title = "Top 20 Channels by Total Views per Subscribers"
+    bar_chart.title = "Top 20 Videos by Total Views per Subscribers"
     bar_chart.x_labels = top20channelid
     bar_chart.add('Total Views/Subscriber Count', top20channelsubscnt)
     bar_graph = bar_chart.render_data_uri()
@@ -250,7 +250,7 @@ def top20likesbydislikes():
         urls.append(url)
     print(urls)
     bar_chart = pygal.Bar()
-    bar_chart.title = "Top 20 Channels by Total Likes per Dislikes"
+    bar_chart.title = "Top 20 Videos by Total Likes per Dislikes"
     bar_chart.x_labels = top20channelid
     bar_chart.add('Total Likes/Total Dislikes', top20channelsubscnt)
     bar_graph = bar_chart.render_data_uri()
@@ -272,7 +272,7 @@ def top20commentsbyviews():
         urls.append(url)
     print(urls)
     bar_chart = pygal.Bar()
-    bar_chart.title = "Top 20 Video by Comments per View"
+    bar_chart.title = "Top 20 Videos by Comments per View"
     bar_chart.x_labels = top20channelid
     bar_chart.add('Total Comments/Total Views', top20channelsubscnt)
     bar_graph = bar_chart.render_data_uri()
@@ -302,10 +302,11 @@ def ScatterPlot():
     scatter_plot.add("sub/1000 & viewcnt/10000",listData)
     scatter_plot.add("totvid/10 & viewcnt/10000", listData1)
     scatter_plot_rendered = scatter_plot.render_data_uri()
+
     print("THIS IS SPARTA!!!!")
     return render_template('graphs/scatter1.html', scatter_plot=scatter_plot_rendered)
 
 
-if __name__ == '__main__':
-    app.run(host="localhost", port=5001, debug=True)
+#if __name__ == '__main__':
+#    app.run(host="localhost", port=5001, debug=True)
 
