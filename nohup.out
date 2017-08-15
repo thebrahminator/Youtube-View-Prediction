@@ -24,3 +24,7 @@ THIS IS SPARTA!!!!
 THIS IS SPARTA!!!!
 THIS IS SPARTA!!!!
 [2017-08-15 18:20:44 +0000] [577] [INFO] Shutting down: Master
+[2017-08-15 18:21:50 +0000] [1719] [INFO] Starting gunicorn 19.7.1
+[2017-08-15 18:21:50 +0000] [1719] [INFO] Listening at: http://127.0.0.1:8000 (1719)
+[2017-08-15 18:21:50 +0000] [1719] [INFO] Using worker: sync
+[2017-08-15 18:21:50 +0000] [1722] [INFO] Booting worker with pid: 1722
