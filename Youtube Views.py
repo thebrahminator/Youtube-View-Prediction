@@ -146,6 +146,28 @@ def top20allviews():
     bar_graph = bar_chart.render_data_uri()
     return render_template('graphs/top20allviews.html', bar_graph=bar_graph, urls=urls, ids=top20channelid)
 
+@app.route('/top20dislikes', methods=["GET"])
+def top20dislikes():
+    top20channelfile = open(os.path.join(app.config["UPLOAD_FOLDER"], "top20dislikes.csv"), 'r')
+    top20subdata = csv.DictReader(top20channelfile)
+    top20channelid = []
+    top20channelsubscnt = []
+    for data in top20subdata:
+        top20channelid.append(data["videoId"])
+        top20channelsubscnt.append(int(data["dislikeCount"]))
+
+    urls = []
+    for data in top20channelid:
+        url = "https://www.youtube.com/watch?v="+data
+        urls.append(url)
+    print(urls)
+    bar_chart = pygal.Bar()
+    bar_chart.title = "Top 20 Videos by Total Dislike Count"
+    bar_chart.x_labels = top20channelid
+    bar_chart.add('Total Dislike Count', top20channelsubscnt)
+    bar_graph = bar_chart.render_data_uri()
+    return render_template('graphs/top20dislikes.html', bar_graph=bar_graph, urls=urls, ids=top20channelid)
+
 @app.route('/top20likesbyviews', methods=["GET"])
 def top20likesbyviews():
     top20channelfile = open(os.path.join(app.config["UPLOAD_FOLDER"], "top20likesbyviews.csv"), 'r')
@@ -276,7 +298,7 @@ def ScatterPlot():
             listData1.append(intermid)
 
     scatter_plot = pygal.XY(stroke=False)
-    scatter_plot.title = "Subscriber Count vs View Count"
+    scatter_plot.title = "Top 20 Subscriber Count vs View Count"
     scatter_plot.add("sub/1000 & viewcnt/10000",listData)
     scatter_plot.add("totvid/10 & viewcnt/10000", listData1)
     scatter_plot_rendered = scatter_plot.render_data_uri()

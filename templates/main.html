@@ -114,18 +114,19 @@
         <!-- sidebar menu: : style can be found in sidebar.less -->
         <ul class="sidebar-menu">
             <li class="header">MAIN NAVIGATION</li>
-            <li><a href="{{ url_for('top20views') }}">Top 20 Views</a></li>
-            <li><a href="{{ url_for('top20likes') }}">Top 20 Likes</a></li>
-            <li><a href="{{ url_for('top20Comments') }}">Top 20 Comments</a></li>
+            <li><a href="{{ url_for('top20views') }}">Top 20 Videos by Views</a></li>
+            <li><a href="{{ url_for('top20likes') }}">Top 20 Video by Likes</a></li>
+            <li><a href="{{ url_for('top20Comments') }}">Top 20 Videos by Comments</a></li>
+            <li><a href="{{ url_for('top20dislikes') }}">Top 20 Videos by Dislikes</a></li>
             <li><a href="{{ url_for('top20channels') }}">Top 20 Channels by Subscriber</a></li>
             <li><a href="{{ url_for('top20allviews') }}">Top 20 Channels by Total Views</a></li>
             <li><a href="{{ url_for('top20videocount') }}">Top 20 Channels by Video Count</a></li>
             <li><a href="{{ url_for('ScatterPlot') }}">Scatter Plot for Channel Data</a></li>
-            <li><a href="{{ url_for('top20likesbyviews') }}">Top 20 Likes By Views</a></li>
-            <li><a href="{{ url_for('top20dislikesbyviews') }}">Top 20 Dislikes By Views</a></li>
-            <li><a href="{{ url_for('top20viewsbysubscribers') }}">Top 20 Views Per Subscriber</a></li>
-            <li><a href="{{ url_for('top20likesbydislikes') }}">Top 20 Likes By Dislikes</a></li>
-            <li><a href="{{ url_for('top20commentsbyviews') }}">Top 20 Comments By Views</a></li>
+            <li><a href="{{ url_for('top20likesbyviews') }}">Top 20 Videos by Likes Per Views</a></li>
+            <li><a href="{{ url_for('top20dislikesbyviews') }}">Top 20 Videos by Dislikes Per Views</a></li>
+            <li><a href="{{ url_for('top20viewsbysubscribers') }}">Top 20 Vidoes by Views Per Subscriber</a></li>
+            <li><a href="{{ url_for('top20likesbydislikes') }}">Top 20 Videos by Likes Per Dislikes</a></li>
+            <li><a href="{{ url_for('top20commentsbyviews') }}">Top 20 Videos by Comments Per Views</a></li>
         </ul>
     </section>
     <!-- /.sidebar -->
