@@ -96,3 +96,72 @@
 ['http://www.youtube.com/watch?v=kJQP7kiw5Fk', 'http://www.youtube.com/watch?v=kJQP7kiw5Fk', 'http://www.youtube.com/watch?v=RgKAFK5djSk', 'http://www.youtube.com/watch?v=9bZkp7q19f0', 'http://www.youtube.com/watch?v=fRh_vgS2dFE', 'http://www.youtube.com/watch?v=OPf0YbXqDm0', 'http://www.youtube.com/watch?v=KYniUCGPGLs', 'http://www.youtube.com/watch?v=nfWlot6h_JM', 'http://www.youtube.com/watch?v=NUsoVlDFqZg', 'http://www.youtube.com/watch?v=09R8_2nJtjg', 'http://www.youtube.com/watch?v=CevxZvSJLk8', 'http://www.youtube.com/watch?v=e-ORhEE9VVg', 'http://www.youtube.com/watch?v=JGwWNGJdvx8', 'http://www.youtube.com/watch?v=PT2_F-1esPk', 'http://www.youtube.com/watch?v=6Mgqbai3fKo', 'http://www.youtube.com/watch?v=uelHwf8o7_U', 'http://www.youtube.com/watch?v=uxpDa-c-4Mc', 'http://www.youtube.com/watch?v=lY2yjAdbvdQ', 'http://www.youtube.com/watch?v=L0MK7qz13bU', 'http://www.youtube.com/watch?v=ASO_zypdnsQ']
 ['https://www.youtube.com/channel/UCHTK-2W11Vh1V4uwofOfR4w', 'https://www.youtube.com/channel/UCycNGmxYc8z3FNfvQ3HOWSQ', 'https://www.youtube.com/channel/UCqYw-CTd1dU2yGI71sEyqNw', 'https://www.youtube.com/channel/UCJi8M0hRKjz8SLPvJKEVTOg', 'https://www.youtube.com/channel/UCQlGBspQdj17WOPBQMT1k9A', 'https://www.youtube.com/channel/UCupvZG-5ko_eiXAupbDfxWw', 'https://www.youtube.com/channel/UCJmSX7ghommK3pwMLGNUvPA', 'https://www.youtube.com/channel/UCKy1dAqELo0zrOtPkf0eTMw', 'https://www.youtube.com/channel/UCfkpM3RuyUHqY4nRlP-egNA', 'https://www.youtube.com/channel/UCmyKnNRH0wH-r8I-ceP-dsg', 'https://www.youtube.com/channel/UCAR3h_9fLV82N2FH4cE4RKw', 'https://www.youtube.com/channel/UC52X5wxOL_s5yw0dQk7NtgA', 'https://www.youtube.com/channel/UCttspZesZIDEwwpVIgoZtWQ', 'https://www.youtube.com/channel/UCsT0YIqwnpJCM-mx7-gSA4Q', 'https://www.youtube.com/channel/UCVbsFo8aCgvIRIO9RYwsQMA', 'https://www.youtube.com/channel/UCumtYpCY26F6Jr3satUgMvA', 'https://www.youtube.com/channel/UCFLM-M7PthQgxyulzSSVYrA', 'https://www.youtube.com/channel/UCGp4u0WHLsK8OAxnvwiTyhA', 'https://www.youtube.com/channel/UCKVsdeoHExltrWMuK0hOWmg', 'https://www.youtube.com/channel/UCKV0PostOmPjnXEbDgDYSFg', 'https://www.youtube.com/channel/UCixvwLpO_pk4uVOkkkqP3Mw']
 [2017-08-14 21:03:44 +0000] [8067] [INFO] Shutting down: Master
+[2017-08-15 16:36:17 +0000] [32012] [INFO] Starting gunicorn 19.7.1
+[2017-08-15 16:36:17 +0000] [32012] [INFO] Listening at: http://127.0.0.1:8000 (32012)
+[2017-08-15 16:36:17 +0000] [32012] [INFO] Using worker: sync
+[2017-08-15 16:36:17 +0000] [32015] [INFO] Booting worker with pid: 32015
+[2017-08-15 16:36:17 +0000] [32015] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+  File "/root/Youtube-View-Prediction/Youtube Views.py", line 3, in <module>
+    import pygal
+ImportError: No module named 'pygal'
+[2017-08-15 16:36:17 +0000] [32015] [INFO] Worker exiting (pid: 32015)
+[2017-08-15 16:36:17 +0000] [32012] [INFO] Shutting down: Master
+[2017-08-15 16:36:17 +0000] [32012] [INFO] Reason: Worker failed to boot.
+[2017-08-15 16:36:22 +0000] [32021] [INFO] Starting gunicorn 19.7.1
+[2017-08-15 16:36:22 +0000] [32021] [INFO] Listening at: http://127.0.0.1:8000 (32021)
+[2017-08-15 16:36:22 +0000] [32021] [INFO] Using worker: sync
+[2017-08-15 16:36:22 +0000] [32024] [INFO] Booting worker with pid: 32024
+[2017-08-15 16:36:22 +0000] [32024] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.5/dist-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+  File "/root/Youtube-View-Prediction/Youtube Views.py", line 3, in <module>
+    import pygal
+ImportError: No module named 'pygal'
+[2017-08-15 16:36:22 +0000] [32024] [INFO] Worker exiting (pid: 32024)
+[2017-08-15 16:36:23 +0000] [32021] [INFO] Shutting down: Master
+[2017-08-15 16:36:23 +0000] [32021] [INFO] Reason: Worker failed to boot.
+[2017-08-15 16:37:08 +0000] [32065] [INFO] Starting gunicorn 19.7.1
+[2017-08-15 16:37:08 +0000] [32065] [INFO] Listening at: http://127.0.0.1:8000 (32065)
+[2017-08-15 16:37:08 +0000] [32065] [INFO] Using worker: sync
+[2017-08-15 16:37:08 +0000] [32068] [INFO] Booting worker with pid: 32068
+[2017-08-15 16:37:11 +0000] [32065] [INFO] Handling signal: int
+[2017-08-15 16:37:11 +0000] [32068] [INFO] Worker exiting (pid: 32068)
+[2017-08-15 16:37:11 +0000] [32065] [INFO] Shutting down: Master
+[2017-08-15 16:37:15 +0000] [32070] [INFO] Starting gunicorn 19.7.1
+[2017-08-15 16:37:15 +0000] [32070] [INFO] Listening at: http://127.0.0.1:8000 (32070)
+[2017-08-15 16:37:15 +0000] [32070] [INFO] Using worker: sync
+[2017-08-15 16:37:15 +0000] [32073] [INFO] Booting worker with pid: 32073
+[2017-08-15 17:19:23 +0000] [32070] [INFO] Handling signal: term
+[2017-08-15 17:19:23 +0000] [32073] [INFO] Worker exiting (pid: 32073)
+['https://www.youtube.com/channel/6sqiUOd1Ocs', 'https://www.youtube.com/channel/o27NHE_oi_Q', 'https://www.youtube.com/channel/7EJMzw0E2xA', 'https://www.youtube.com/channel/1tWol5-TMcs', 'https://www.youtube.com/channel/kphFJg2S-Oo', 'https://www.youtube.com/channel/1E82Rgf7hJc', 'https://www.youtube.com/channel/MFIDOb4CYts', 'https://www.youtube.com/channel/Gx2SpkgWvB0', 'https://www.youtube.com/channel/vR7-0IzWQHk', 'https://www.youtube.com/channel/9i5eB_ckhEc', 'https://www.youtube.com/channel/_8CVEFPHhkg', 'https://www.youtube.com/channel/smpfb6jjcK8', 'https://www.youtube.com/channel/tTP1xXp_FP4', 'https://www.youtube.com/channel/Lqv5429EuxQ', 'https://www.youtube.com/channel/27S_0nrGdrI', 'https://www.youtube.com/channel/dFFyQGdQKqY', 'https://www.youtube.com/channel/Og7iGR4t6yw', 'https://www.youtube.com/channel/tCpNxoK3bzg', 'https://www.youtube.com/channel/xi9b4GgMuqc', 'https://www.youtube.com/channel/DskgUN-4vK4', 'https://www.youtube.com/channel/47AHwaWYOYI']
+THIS IS SPARTA!!!!
+['https://www.youtube.com/channel/UCHTK-2W11Vh1V4uwofOfR4w', 'https://www.youtube.com/channel/UCycNGmxYc8z3FNfvQ3HOWSQ', 'https://www.youtube.com/channel/UCqYw-CTd1dU2yGI71sEyqNw', 'https://www.youtube.com/channel/UCJi8M0hRKjz8SLPvJKEVTOg', 'https://www.youtube.com/channel/UCQlGBspQdj17WOPBQMT1k9A', 'https://www.youtube.com/channel/UCupvZG-5ko_eiXAupbDfxWw', 'https://www.youtube.com/channel/UCJmSX7ghommK3pwMLGNUvPA', 'https://www.youtube.com/channel/UCKy1dAqELo0zrOtPkf0eTMw', 'https://www.youtube.com/channel/UCfkpM3RuyUHqY4nRlP-egNA', 'https://www.youtube.com/channel/UCmyKnNRH0wH-r8I-ceP-dsg', 'https://www.youtube.com/channel/UCAR3h_9fLV82N2FH4cE4RKw', 'https://www.youtube.com/channel/UC52X5wxOL_s5yw0dQk7NtgA', 'https://www.youtube.com/channel/UCttspZesZIDEwwpVIgoZtWQ', 'https://www.youtube.com/channel/UCsT0YIqwnpJCM-mx7-gSA4Q', 'https://www.youtube.com/channel/UCVbsFo8aCgvIRIO9RYwsQMA', 'https://www.youtube.com/channel/UCumtYpCY26F6Jr3satUgMvA', 'https://www.youtube.com/channel/UCFLM-M7PthQgxyulzSSVYrA', 'https://www.youtube.com/channel/UCGp4u0WHLsK8OAxnvwiTyhA', 'https://www.youtube.com/channel/UCKVsdeoHExltrWMuK0hOWmg', 'https://www.youtube.com/channel/UCKV0PostOmPjnXEbDgDYSFg', 'https://www.youtube.com/channel/UCixvwLpO_pk4uVOkkkqP3Mw']
+[2017-08-15 17:19:23 +0000] [32070] [INFO] Shutting down: Master
