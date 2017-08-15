@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="013f5e07-94e2-476f-a6e1-41bc93ebeab6" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/csvdataset/top20commentsbyviews.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/csvdataset/top20likesbydislikes.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/csvdataset/top20viewsbysubscribers.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/graphs/top20commentsbyviews.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/graphs/top20likesbydislikes.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/graphs/top20viewsbysubscribers.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/topparsers/top20commentsbyviews.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/topparsers/top20likesbydislikes.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/topparsers/top20viewsbysubscribers.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Youtube Views.py" afterPath="$PROJECT_DIR$/Youtube Views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main.html" afterPath="$PROJECT_DIR$/templates/main.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,12 +31,15 @@
     <SUITE FILE_PATH="coverage/Youtube_Views$top20likes.coverage" NAME="top20likes Coverage Results" MODIFIED="1502814396606" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/topparsers" />
     <SUITE FILE_PATH="coverage/Youtube_Views$top20dislikesbyviews.coverage" NAME="top20dislikesbyviews Coverage Results" MODIFIED="1502815897289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/topparsers" />
     <SUITE FILE_PATH="coverage/Youtube_Views$top20subschannel.coverage" NAME="top20subschannel Coverage Results" MODIFIED="1502652859229" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/topparsers" />
-    <SUITE FILE_PATH="coverage/Youtube_Views$Youtube_Views.coverage" NAME="Youtube Views Coverage Results" MODIFIED="1502815987381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Youtube_Views$Youtube_Views.coverage" NAME="Youtube Views Coverage Results" MODIFIED="1502817595712" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Youtube_Views$top20likesbydislikes.coverage" NAME="top20likesbydislikes Coverage Results" MODIFIED="1502817000647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/topparsers" />
     <SUITE FILE_PATH="coverage/Youtube_Views$dislikesbyview.coverage" NAME="dislikesbyview Coverage Results" MODIFIED="1502732823337" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/derived_attributes" />
     <SUITE FILE_PATH="coverage/Youtube_Views$top20allvideos.coverage" NAME="top20allvideos Coverage Results" MODIFIED="1502655670897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/topparsers" />
     <SUITE FILE_PATH="coverage/Youtube_Views$top20comments__1_.coverage" NAME="top20comments (1) Coverage Results" MODIFIED="1502651275523" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/topparsers" />
     <SUITE FILE_PATH="coverage/Youtube_Views$fulldataset.coverage" NAME="fulldataset Coverage Results" MODIFIED="1502788070770" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/derived_attributes" />
+    <SUITE FILE_PATH="coverage/Youtube_Views$top20viewsbysubscribers.coverage" NAME="top20viewsbysubscribers Coverage Results" MODIFIED="1502816401195" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/topparsers" />
     <SUITE FILE_PATH="coverage/Youtube_Views$scrapping_video_description.coverage" NAME="scrapping_video_description Coverage Results" MODIFIED="1502653671899" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scrappers" />
+    <SUITE FILE_PATH="coverage/Youtube_Views$top20commentsbyviews.coverage" NAME="top20commentsbyviews Coverage Results" MODIFIED="1502817593225" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/topparsers" />
     <SUITE FILE_PATH="coverage/Youtube_Views$scrapping_channel_details.coverage" NAME="scrapping_channel_details Coverage Results" MODIFIED="1502649146073" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Youtube_Views$commentsbyview.coverage" NAME="commentsbyview Coverage Results" MODIFIED="1502733133400" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/derived_attributes" />
     <SUITE FILE_PATH="coverage/Youtube_Views$scrapping_video_details.coverage" NAME="scrapping_video_details Coverage Results" MODIFIED="1502647262730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -50,58 +63,38 @@
       <file leaf-file-name="Youtube Views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Youtube Views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="542">
-              <caret line="219" column="0" lean-forward="false" selection-start-line="219" selection-start-column="0" selection-end-line="219" selection-end-column="0" />
+            <state relative-caret-position="310">
+              <caret line="256" column="55" lean-forward="false" selection-start-line="256" selection-start-column="55" selection-end-line="256" selection-end-column="55" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="top20dislikesbyviews.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/csvdataset/top20dislikesbyviews.csv">
+      <file leaf-file-name="top20commentsbyviews.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/graphs/top20commentsbyviews.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="-1">
+              <caret line="7" column="51" lean-forward="false" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/main.html">
+      <file leaf-file-name="top20likesbydislikes.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/topparsers/top20likesbydislikes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="124" column="75" lean-forward="false" selection-start-line="124" selection-start-column="75" selection-end-line="124" selection-end-column="75" />
+            <state relative-caret-position="178">
+              <caret line="13" column="31" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="top20dislikesbyviews.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/graphs/top20dislikesbyviews.html">
+      <file leaf-file-name="top20commentsbyviews.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/topparsers/top20commentsbyviews.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="68" lean-forward="false" selection-start-line="29" selection-start-column="68" selection-end-line="29" selection-end-column="68" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="top20dislikesbyviews.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/topparsers/top20dislikesbyviews.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="17" column="79" lean-forward="false" selection-start-line="17" selection-start-column="79" selection-end-line="17" selection-end-column="79" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="top20dislikesbyviews.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/datasets/top20dislikesbyviews.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="300">
+              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -134,10 +127,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/youtubeapi.py" />
-        <option value="$PROJECT_DIR$/channel_names.csv" />
-        <option value="$PROJECT_DIR$/scrapping_video_and_channel_id.py" />
-        <option value="$PROJECT_DIR$/videoandchannelid.csv" />
         <option value="$PROJECT_DIR$/remaining.csv" />
         <option value="$PROJECT_DIR$/top10views.py" />
         <option value="$PROJECT_DIR$/templates/top20.html" />
@@ -181,8 +170,14 @@
         <option value="$PROJECT_DIR$/templates/graphs/scatter1.html" />
         <option value="$PROJECT_DIR$/topparsers/top20dislikesbyviews.py" />
         <option value="$PROJECT_DIR$/templates/graphs/top20dislikesbyviews.html" />
-        <option value="$PROJECT_DIR$/Youtube Views.py" />
+        <option value="$PROJECT_DIR$/topparsers/top20viewsbysubscribers.py" />
+        <option value="$PROJECT_DIR$/templates/graphs/top20viewsbysubscribers.html" />
+        <option value="$PROJECT_DIR$/topparsers/top20likesbydislikes.py" />
+        <option value="$PROJECT_DIR$/templates/graphs/top20likesbydislikes.html" />
         <option value="$PROJECT_DIR$/templates/main.html" />
+        <option value="$PROJECT_DIR$/topparsers/top20commentsbyviews.py" />
+        <option value="$PROJECT_DIR$/Youtube Views.py" />
+        <option value="$PROJECT_DIR$/templates/graphs/top20commentsbyviews.html" />
       </list>
     </option>
   </component>
@@ -232,38 +227,6 @@
               <item name="Youtube Views" type="b2602c69:ProjectViewProjectNode" />
               <item name="Youtube Views" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Youtube Views" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Youtube Views" type="462c0819:PsiDirectoryNode" />
-              <item name="datasets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Youtube Views" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Youtube Views" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Youtube Views" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Youtube Views" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="csvdataset" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Youtube Views" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Youtube Views" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Youtube Views" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Youtube Views" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="graphs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Youtube Views" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Youtube Views" type="462c0819:PsiDirectoryNode" />
-              <item name="topparsers" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -296,7 +259,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Youtube Views">
+  <component name="RunManager" selected="Python.top20commentsbyviews">
     <configuration name="Youtube Views" type="PythonConfigurationType" factoryName="Python" singleton="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -315,38 +278,20 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="fulldataset" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="top20commentsbyviews" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/derived_attributes" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/topparsers" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Youtube Views" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/derived_attributes/fulldataset.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="likesbyview" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/derived_attributes" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Youtube Views" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/derived_attributes/likesbyview.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/topparsers/top20commentsbyviews.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -369,7 +314,7 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="top20likes" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="top20likesbydislikes" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -382,7 +327,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Youtube Views" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/topparsers/top20likes.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/topparsers/top20likesbydislikes.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -405,21 +350,39 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
+    <configuration name="top20viewsbysubscribers" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/topparsers" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Youtube Views" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/topparsers/top20viewsbysubscribers.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.Youtube Views" />
-      <item index="1" class="java.lang.String" itemvalue="Python.fulldataset" />
-      <item index="2" class="java.lang.String" itemvalue="Python.top20likesbyviews" />
-      <item index="3" class="java.lang.String" itemvalue="Python.top20likes" />
-      <item index="4" class="java.lang.String" itemvalue="Python.likesbyview" />
-      <item index="5" class="java.lang.String" itemvalue="Python.top20dislikesbyviews" />
+      <item index="1" class="java.lang.String" itemvalue="Python.top20likesbyviews" />
+      <item index="2" class="java.lang.String" itemvalue="Python.top20dislikesbyviews" />
+      <item index="3" class="java.lang.String" itemvalue="Python.top20viewsbysubscribers" />
+      <item index="4" class="java.lang.String" itemvalue="Python.top20likesbydislikes" />
+      <item index="5" class="java.lang.String" itemvalue="Python.top20commentsbyviews" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.top20dislikesbyviews" />
-        <item index="1" class="java.lang.String" itemvalue="Python.top20likesbyviews" />
-        <item index="2" class="java.lang.String" itemvalue="Python.likesbyview" />
-        <item index="3" class="java.lang.String" itemvalue="Python.top20likes" />
-        <item index="4" class="java.lang.String" itemvalue="Python.fulldataset" />
+        <item index="0" class="java.lang.String" itemvalue="Python.top20commentsbyviews" />
+        <item index="1" class="java.lang.String" itemvalue="Python.top20likesbydislikes" />
+        <item index="2" class="java.lang.String" itemvalue="Python.top20viewsbysubscribers" />
+        <item index="3" class="java.lang.String" itemvalue="Python.top20dislikesbyviews" />
+        <item index="4" class="java.lang.String" itemvalue="Python.top20likesbyviews" />
       </list>
     </recent_temporary>
   </component>
@@ -450,17 +413,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21890146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -485,104 +447,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/graphs/top20likes.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="29" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/topparsers/top20subschannel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datasets/top20channels.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datasets/channel_names.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datasets/top20allviews.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="23" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/topparsers/top20allviews.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="18" column="26" lean-forward="true" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datasets/top20allvideos.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="31" lean-forward="true" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/topparsers/top20allvideos.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/csvdataset/top20allvideos.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/graphs/top20subscriber.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/graphs/top20allvideos.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="47" lean-forward="false" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/graphs/top20allviews.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="51" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.git/info/exclude">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datasets/likesbydislikes.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6485">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/derived_attributes/likesbydislike.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -594,13 +458,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="38" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="20" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datasets/commentsbyviews.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10066">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -650,13 +507,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="61" column="19" lean-forward="false" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datasets/viewsbysubscribers.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -795,14 +645,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/topparsers/top20likesbyviews.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="23" column="45" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/datasets/dislikesbyview.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -827,6 +669,56 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/static/csvdataset/top20dislikesbyviews.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datasets/viewsbysubscribers.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="25" lean-forward="true" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datasets/top20viewsbysubscribers.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/csvdataset/top20viewsbysubscribers.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/topparsers/top20subschannel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/topparsers/top20viewsbysubscribers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="51" lean-forward="true" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/graphs/top20likesbyviews.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -835,23 +727,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/graphs/top20dislikesbyviews.html">
+    <entry file="file://$PROJECT_DIR$/topparsers/top20likesbyviews.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="68" lean-forward="false" selection-start-line="29" selection-start-column="68" selection-end-line="29" selection-end-column="68" />
+        <state relative-caret-position="330">
+          <caret line="23" column="45" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Youtube Views.py">
+    <entry file="file://$PROJECT_DIR$/datasets/likesbydislikes.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="542">
-          <caret line="219" column="0" lean-forward="false" selection-start-line="219" selection-start-column="0" selection-end-line="219" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="22" lean-forward="true" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/csvdataset/top20dislikesbyviews.csv">
+    <entry file="file://$PROJECT_DIR$/datasets/top20likesbydislikes.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="22" lean-forward="true" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/graphs/top20viewsbysubscribers.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="54" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/graphs/top20likesbydislikes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/csvdataset/top20likesbydislikes.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -861,8 +777,72 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/main.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="126" column="88" lean-forward="false" selection-start-line="126" selection-start-column="88" selection-end-line="126" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/topparsers/top20likesbydislikes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="13" column="31" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datasets/commentsbyviews.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="22" lean-forward="true" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/topparsers/top20commentsbyviews.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datasets/top20commentsbyviews.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="9" lean-forward="false" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/csvdataset/top20commentsbyviews.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Youtube Views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="256" column="55" lean-forward="false" selection-start-line="256" selection-start-column="55" selection-end-line="256" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/graphs/top20dislikesbyviews.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="235">
-          <caret line="124" column="75" lean-forward="false" selection-start-line="124" selection-start-column="75" selection-end-line="124" selection-end-column="75" />
+          <caret line="17" column="13" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/graphs/top20commentsbyviews.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1">
+          <caret line="7" column="51" lean-forward="false" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
           <folding />
         </state>
       </provider>
