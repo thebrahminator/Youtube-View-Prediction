@@ -96,3 +96,29 @@
 ['http://www.youtube.com/watch?v=kJQP7kiw5Fk', 'http://www.youtube.com/watch?v=kJQP7kiw5Fk', 'http://www.youtube.com/watch?v=RgKAFK5djSk', 'http://www.youtube.com/watch?v=9bZkp7q19f0', 'http://www.youtube.com/watch?v=fRh_vgS2dFE', 'http://www.youtube.com/watch?v=OPf0YbXqDm0', 'http://www.youtube.com/watch?v=KYniUCGPGLs', 'http://www.youtube.com/watch?v=nfWlot6h_JM', 'http://www.youtube.com/watch?v=NUsoVlDFqZg', 'http://www.youtube.com/watch?v=09R8_2nJtjg', 'http://www.youtube.com/watch?v=CevxZvSJLk8', 'http://www.youtube.com/watch?v=e-ORhEE9VVg', 'http://www.youtube.com/watch?v=JGwWNGJdvx8', 'http://www.youtube.com/watch?v=PT2_F-1esPk', 'http://www.youtube.com/watch?v=6Mgqbai3fKo', 'http://www.youtube.com/watch?v=uelHwf8o7_U', 'http://www.youtube.com/watch?v=uxpDa-c-4Mc', 'http://www.youtube.com/watch?v=lY2yjAdbvdQ', 'http://www.youtube.com/watch?v=L0MK7qz13bU', 'http://www.youtube.com/watch?v=ASO_zypdnsQ']
 ['https://www.youtube.com/channel/UCHTK-2W11Vh1V4uwofOfR4w', 'https://www.youtube.com/channel/UCycNGmxYc8z3FNfvQ3HOWSQ', 'https://www.youtube.com/channel/UCqYw-CTd1dU2yGI71sEyqNw', 'https://www.youtube.com/channel/UCJi8M0hRKjz8SLPvJKEVTOg', 'https://www.youtube.com/channel/UCQlGBspQdj17WOPBQMT1k9A', 'https://www.youtube.com/channel/UCupvZG-5ko_eiXAupbDfxWw', 'https://www.youtube.com/channel/UCJmSX7ghommK3pwMLGNUvPA', 'https://www.youtube.com/channel/UCKy1dAqELo0zrOtPkf0eTMw', 'https://www.youtube.com/channel/UCfkpM3RuyUHqY4nRlP-egNA', 'https://www.youtube.com/channel/UCmyKnNRH0wH-r8I-ceP-dsg', 'https://www.youtube.com/channel/UCAR3h_9fLV82N2FH4cE4RKw', 'https://www.youtube.com/channel/UC52X5wxOL_s5yw0dQk7NtgA', 'https://www.youtube.com/channel/UCttspZesZIDEwwpVIgoZtWQ', 'https://www.youtube.com/channel/UCsT0YIqwnpJCM-mx7-gSA4Q', 'https://www.youtube.com/channel/UCVbsFo8aCgvIRIO9RYwsQMA', 'https://www.youtube.com/channel/UCumtYpCY26F6Jr3satUgMvA', 'https://www.youtube.com/channel/UCFLM-M7PthQgxyulzSSVYrA', 'https://www.youtube.com/channel/UCGp4u0WHLsK8OAxnvwiTyhA', 'https://www.youtube.com/channel/UCKVsdeoHExltrWMuK0hOWmg', 'https://www.youtube.com/channel/UCKV0PostOmPjnXEbDgDYSFg', 'https://www.youtube.com/channel/UCixvwLpO_pk4uVOkkkqP3Mw']
 [2017-08-14 21:03:44 +0000] [8067] [INFO] Shutting down: Master
+[2017-08-15 22:14:17 +0530] [6433] [INFO] Starting gunicorn 19.7.0
+[2017-08-15 22:14:17 +0530] [6433] [INFO] Listening at: http://127.0.0.1:8000 (6433)
+[2017-08-15 22:14:17 +0530] [6433] [INFO] Using worker: sync
+[2017-08-15 22:14:17 +0530] [6436] [INFO] Booting worker with pid: 6436
+[2017-08-15 22:14:17 +0530] [6436] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/Library/Python/2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/Library/Python/2.7/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Library/Python/2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Library/Python/2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/Library/Python/2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Library/Python/2.7/site-packages/gunicorn/util.py", line 376, in import_app
+    __import__(module)
+  File "/Users/thebrahminator/Developer/Python/Youtube Views/Youtube Views.py", line 1, in <module>
+    from flask import Flask, render_template, redirect
+ImportError: No module named flask
+[2017-08-15 22:14:17 +0530] [6436] [INFO] Worker exiting (pid: 6436)
+[2017-08-15 22:14:17 +0530] [6433] [INFO] Shutting down: Master
+[2017-08-15 22:14:17 +0530] [6433] [INFO] Reason: Worker failed to boot.

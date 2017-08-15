@@ -168,6 +168,28 @@ def top20likesbyviews():
     bar_graph = bar_chart.render_data_uri()
     return render_template('graphs/top20likesbyviews.html', bar_graph=bar_graph, urls=urls, ids=top20channelid)
 
+@app.route('/top20dislikesbyviews', methods=["GET"])
+def top20dislikesbyviews():
+    top20channelfile = open(os.path.join(app.config["UPLOAD_FOLDER"], "top20dislikesbyviews.csv"), 'r')
+    top20subdata = csv.DictReader(top20channelfile)
+    top20channelid = []
+    top20channelsubscnt = []
+    for data in top20subdata:
+        top20channelid.append(data["videoId"])
+        top20channelsubscnt.append(float(data["dislikes/view"]))
+
+    urls = []
+    for data in top20channelid:
+        url = "https://www.youtube.com/channel/"+data
+        urls.append(url)
+    print(urls)
+    bar_chart = pygal.Bar()
+    bar_chart.title = "Top 20 Channels by Total Dislikes per View"
+    bar_chart.x_labels = top20channelid
+    bar_chart.add('Total Dislikes/View Count', top20channelsubscnt)
+    bar_graph = bar_chart.render_data_uri()
+    return render_template('graphs/top20dislikesbyviews.html', bar_graph=bar_graph, urls=urls, ids=top20channelid)
+
 @app.route('/scatter1', methods=["GET"])
 def scatter1():
     channelDataFile = open(os.path.join(app.config["UPLOAD_FOLDER"], "channelStats.csv"), 'r')
@@ -194,6 +216,6 @@ def scatter1():
     return render_template('graphs/scatter1.html', scatter_plot=scatter_plot_rendered)
 
 
-#if __name__ == '__main__':
-#    app.run(host="localhost", port=5001, debug=True)
+if __name__ == '__main__':
+    app.run(host="localhost", port=5001, debug=True)
 
