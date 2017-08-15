@@ -194,6 +194,6 @@ def scatter1():
     return render_template('graphs/scatter1.html', scatter_plot=scatter_plot_rendered)
 
 
-if __name__ == '__main__':
-    app.run(host="localhost", port=5001, debug=True)
+#if __name__ == '__main__':
+#    app.run(host="localhost", port=5001, debug=True)
 
