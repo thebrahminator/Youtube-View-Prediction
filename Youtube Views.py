@@ -158,7 +158,7 @@ def top20likesbyviews():
 
     urls = []
     for data in top20channelid:
-        url = "https://www.youtube.com/channel/"+data
+        url = "http://www.youtube.com/watch?v="+data
         urls.append(url)
     print(urls)
     bar_chart = pygal.Bar()
@@ -167,6 +167,94 @@ def top20likesbyviews():
     bar_chart.add('Total Likes/View Count', top20channelsubscnt)
     bar_graph = bar_chart.render_data_uri()
     return render_template('graphs/top20likesbyviews.html', bar_graph=bar_graph, urls=urls, ids=top20channelid)
+
+@app.route('/top20dislikesbyviews', methods=["GET"])
+def top20dislikesbyviews():
+    top20channelfile = open(os.path.join(app.config["UPLOAD_FOLDER"], "top20dislikesbyviews.csv"), 'r')
+    top20subdata = csv.DictReader(top20channelfile)
+    top20channelid = []
+    top20channelsubscnt = []
+    for data in top20subdata:
+        top20channelid.append(data["videoId"])
+        top20channelsubscnt.append(float(data["dislikes/view"]))
+
+    urls = []
+    for data in top20channelid:
+        url = "http://www.youtube.com/watch?v="+data
+        urls.append(url)
+    print(urls)
+    bar_chart = pygal.Bar()
+    bar_chart.title = "Top 20 Channels by Total Dislikes per View"
+    bar_chart.x_labels = top20channelid
+    bar_chart.add('Total Dislikes/View Count', top20channelsubscnt)
+    bar_graph = bar_chart.render_data_uri()
+    return render_template('graphs/top20dislikesbyviews.html', bar_graph=bar_graph, urls=urls, ids=top20channelid)
+
+@app.route('/top20viewsbysubscribers', methods=["GET"])
+def top20viewsbysubscribers():
+    top20channelfile = open(os.path.join(app.config["UPLOAD_FOLDER"], "top20viewsbysubscribers.csv"), 'r')
+    top20subdata = csv.DictReader(top20channelfile)
+    top20channelid = []
+    top20channelsubscnt = []
+    for data in top20subdata:
+        top20channelid.append(data["videoId"])
+        top20channelsubscnt.append(float(data["views/subscribers"]))
+
+    urls = []
+    for data in top20channelid:
+        url = "http://www.youtube.com/watch?v="+data
+        urls.append(url)
+    print(urls)
+    bar_chart = pygal.Bar()
+    bar_chart.title = "Top 20 Channels by Total Views per Subscribers"
+    bar_chart.x_labels = top20channelid
+    bar_chart.add('Total Views/Subscriber Count', top20channelsubscnt)
+    bar_graph = bar_chart.render_data_uri()
+    return render_template('graphs/top20viewsbysubscribers.html', bar_graph=bar_graph, urls=urls, ids=top20channelid)
+
+@app.route('/top20likesbydislikes', methods=["GET"])
+def top20likesbydislikes():
+    top20channelfile = open(os.path.join(app.config["UPLOAD_FOLDER"], "top20likesbydislikes.csv"), 'r')
+    top20subdata = csv.DictReader(top20channelfile)
+    top20channelid = []
+    top20channelsubscnt = []
+    for data in top20subdata:
+        top20channelid.append(data["videoId"])
+        top20channelsubscnt.append(float(data["likes/dislikes"]))
+
+    urls = []
+    for data in top20channelid:
+        url = "http://www.youtube.com/watch?v="+data
+        urls.append(url)
+    print(urls)
+    bar_chart = pygal.Bar()
+    bar_chart.title = "Top 20 Channels by Total Likes per Dislikes"
+    bar_chart.x_labels = top20channelid
+    bar_chart.add('Total Likes/Total Dislikes', top20channelsubscnt)
+    bar_graph = bar_chart.render_data_uri()
+    return render_template('graphs/top20likesbydislikes.html', bar_graph=bar_graph, urls=urls, ids=top20channelid)
+
+@app.route('/top20commentsbyviews', methods=["GET"])
+def top20commentsbyviews():
+    top20channelfile = open(os.path.join(app.config["UPLOAD_FOLDER"], "top20commentsbyviews.csv"), 'r')
+    top20subdata = csv.DictReader(top20channelfile)
+    top20channelid = []
+    top20channelsubscnt = []
+    for data in top20subdata:
+        top20channelid.append(data["videoId"])
+        top20channelsubscnt.append(float(data["comments/views"]))
+
+    urls = []
+    for data in top20channelid:
+        url = "http://www.youtube.com/watch?v="+data
+        urls.append(url)
+    print(urls)
+    bar_chart = pygal.Bar()
+    bar_chart.title = "Top 20 Video by Comments per View"
+    bar_chart.x_labels = top20channelid
+    bar_chart.add('Total Comments/Total Views', top20channelsubscnt)
+    bar_graph = bar_chart.render_data_uri()
+    return render_template('graphs/top20commentsbyviews.html', bar_graph=bar_graph, urls=urls, ids=top20channelid)
 
 @app.route('/scatter1', methods=["GET"])
 def scatter1():
@@ -194,6 +282,6 @@ def scatter1():
     return render_template('graphs/scatter1.html', scatter_plot=scatter_plot_rendered)
 
 
-#if __name__ == '__main__':
-#    app.run(host="localhost", port=5001, debug=True)
+if __name__ == '__main__':
+    app.run(host="localhost", port=5001, debug=True)
 
