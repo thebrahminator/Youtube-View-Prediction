@@ -256,12 +256,13 @@ def top20commentsbyviews():
     bar_graph = bar_chart.render_data_uri()
     return render_template('graphs/top20commentsbyviews.html', bar_graph=bar_graph, urls=urls, ids=top20channelid)
 
-@app.route('/scatter1', methods=["GET"])
-def scatter1():
+@app.route('/scatter_plot', methods=["GET"])
+def ScatterPlot():
     channelDataFile = open(os.path.join(app.config["UPLOAD_FOLDER"], "channelStats.csv"), 'r')
     channelData = csv.DictReader(channelDataFile)
     listData = []
     listData1 = []
+
     for data in channelData:
         if data["viewCount"]!= "-1" and data["subscriberCount"] != "-1" and int(data["viewCount"]) > 10000\
                 and int(data["subscriberCount"]) > 1000:
@@ -273,7 +274,8 @@ def scatter1():
             intermid = [int(data["videoCount"])/10, int(data["viewCount"])/10000]
             intermid=tuple(intermid)
             listData1.append(intermid)
-    scatter_plot = pygal.XY(stroke=True)
+
+    scatter_plot = pygal.XY(stroke=False)
     scatter_plot.title = "Subscriber Count vs View Count"
     scatter_plot.add("sub/1000 & viewcnt/10000",listData)
     scatter_plot.add("totvid/10 & viewcnt/10000", listData1)
