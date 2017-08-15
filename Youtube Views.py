@@ -146,6 +146,28 @@ def top20allviews():
     bar_graph = bar_chart.render_data_uri()
     return render_template('graphs/top20allviews.html', bar_graph=bar_graph, urls=urls, ids=top20channelid)
 
+@app.route('/top20likesbyviews', methods=["GET"])
+def top20likesbyviews():
+    top20channelfile = open(os.path.join(app.config["UPLOAD_FOLDER"], "top20likesbyviews.csv"), 'r')
+    top20subdata = csv.DictReader(top20channelfile)
+    top20channelid = []
+    top20channelsubscnt = []
+    for data in top20subdata:
+        top20channelid.append(data["videoId"])
+        top20channelsubscnt.append(float(data["likes/view"]))
+
+    urls = []
+    for data in top20channelid:
+        url = "https://www.youtube.com/channel/"+data
+        urls.append(url)
+    print(urls)
+    bar_chart = pygal.Bar()
+    bar_chart.title = "Top 20 Channels by Total Likes per View"
+    bar_chart.x_labels = top20channelid
+    bar_chart.add('Total Likes/View Count', top20channelsubscnt)
+    bar_graph = bar_chart.render_data_uri()
+    return render_template('graphs/top20likesbyviews.html', bar_graph=bar_graph, urls=urls, ids=top20channelid)
+
 @app.route('/scatter1', methods=["GET"])
 def scatter1():
     channelDataFile = open(os.path.join(app.config["UPLOAD_FOLDER"], "channelStats.csv"), 'r')
@@ -163,14 +185,15 @@ def scatter1():
             intermid = [int(data["videoCount"])/10, int(data["viewCount"])/10000]
             intermid=tuple(intermid)
             listData1.append(intermid)
-    scatter_plot = pygal.XY(stroke=False)
+    scatter_plot = pygal.XY(stroke=True)
     scatter_plot.title = "Subscriber Count vs View Count"
     scatter_plot.add("sub/1000 & viewcnt/10000",listData)
     scatter_plot.add("totvid/10 & viewcnt/10000", listData1)
     scatter_plot_rendered = scatter_plot.render_data_uri()
+    print("THIS IS SPARTA!!!!")
     return render_template('graphs/scatter1.html', scatter_plot=scatter_plot_rendered)
 
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=5001, debug=True)
+    app.run(host="localhost", port=5001, debug=True)
 

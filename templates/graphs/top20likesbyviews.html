@@ -5,13 +5,9 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Scatter of Subscriber Count / 1000 and View Count / 10000
+                Top 20 videos by Likes Per View
                 <small>With Great Power Comes Great Responsibility! :)  </small>
             </h1>
-            <h4>
-                This page contains scatter plots of:<br>Subscriber Count / 1000 vs View Count / 10000
-                <br>Total Video Count / 10 and Total View Count / 10000
-            </h4>
             <br>
             <!--
             Fill these up whenever you feel like it, custom made for each page.
@@ -24,7 +20,17 @@
 </section>
 <section class="content">
     <div class="row">
-        <embed type="image/svg+xml" src={{scatter_plot|safe}}></embed>
+        <div class="col-lg-8">
+            <embed type="image/svg+xml" src={{bar_graph|safe}} style='max-width:650px'/>
+        </div>
+        <div class="col-lg-4">
+
+            {% for i in range(0,20) %}
+                <ul>
+                    <li><a href="{{ urls[i] }}">{{ ids[i] }}</a></li>
+                </ul>
+            {% endfor %}
+        </div>
     </div>
 </section>
 </div>
